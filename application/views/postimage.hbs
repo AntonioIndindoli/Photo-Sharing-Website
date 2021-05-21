@@ -1,0 +1,27 @@
+<header class="site-header"> <h1>Post an Image</h1>
+</header>
+    <div class="grid-container">
+
+<form class="site-fieldset" method="POST" action="/posts/createPost" enctype="multipart/form-data">
+    <fieldset class="site-fieldset">
+        <legend>Input info</legend>
+        <label>Post Title</label>
+        <input type="text" name="title" required/>
+        <br/>
+        <label>Post Description</label>
+        <input type="text" name="description" required/>
+        <br/>
+       
+    </fieldset>
+    <fieldset class="site-fieldset">
+        <legend>Upload</legend>
+        <input type="file"  name="uploadImage" required/>
+        <br/>
+        <button >Agree with Acceptable Use Policy</button>
+        <br/>
+        <br/>
+        <button type="submit">Post</button>
+    </fieldset>
+</form>
+
+</div>

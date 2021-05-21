@@ -1,0 +1,34 @@
+<header class="site-header"> <h1>User Registration</h1>
+</header>
+<div class="grid-container">
+        <form id="form" class="site-fieldset" method="POST" action="/users/register" enctype="application/x-www-form-urlencoded">
+        <legend>Input Info</legend>
+        <label for="username">Username</label>
+        <input id="username" name="username" required="" type="text" > 
+        <p id="error1"></p>
+        <label>Email</label>
+        <input type="email" name="email" required=""/>
+        <br/>
+        <br/>
+        <label>Password</label>
+        <input id="password" name="password" type="password" required=""/>
+        <p id="error2"></p>
+        <label>Confirm Password</label>
+        <input id="password2" type="password"  name="cpassword" required=""/>
+        <p id="error3"></p>
+        Are you 13+ years old?
+        <input type="checkbox" id="age" name="age" required="">
+        <br/>
+        <br/>
+        Accept TOS and Privacy rules
+        <input type="checkbox" id="rules" name="rules" required="">
+        <br/>
+        <a href="">TOS and Privacy Rules</a>
+        <br/>
+        <br/>
+        <button type="submit">Submit</button>
+
+        </form>
+        <div id="error"></div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="header">
+  <a href="#default" class="logo">Antonio's Website</a>
+  <div class="header-right">
+
+    <a href="/ ">Home</a>
+
+    {{#if logged}}
+    <a id="logout-button" >Logout</a>
+    {{else}}
+    <a id="login-button" href="/login">Login</a>
+    {{/if}}
+
+    <a href="/registration">Registration</a>
+    <a href="/postimage">Post</a>
+    <br/>
+    <input id="search-text" name="search-text" type="text">
+    <button id="search-button" class="search-item">Search</button>
+
+
+  </div>
+</div>
